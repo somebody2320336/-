@@ -1,0 +1,34 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>精灵卡牌画廊</title>  
+    <style>  
+        h1 {{  
+            color:purple;  
+            font-size:40px;  
+            text-align:center;  
+        }}  
+        .gallery {{  
+            display: flex;  
+            justify-content: center;  
+            gap: 20px;  
+        }}  
+        .gallery img {{  
+            width: 100px;  
+            transition: transform 1s;  
+        }}  
+        .gallery img:hover {{  
+            transform: scale(1.5) rotate(10deg);  
+        }}  
+    </style>  
+</head>  
+<body>  
+    <h1>精灵卡牌画廊</h1>  
+    <div class="gallery">  
+        <img src="data:image/png;base64,{image1_base64}" />  
+        <img src="data:image/png;base64,{image2_base64}" />  
+        <img src="data:image/png;base64,{image3_base64}" />  
+        <img src="data:image/png;base64,{image4_base64}" />  
+    </div>  
+</body>  
+</html>  
